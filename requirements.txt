@@ -1,0 +1,10 @@
+fastapi==0.109.2      # FastAPI 최신 버전 (API 프레임워크)
+uvicorn[standard]==0.27.1  # ASGI 서버 (standard 포함: 로그, 리로드 등 추가 기능 포함)
+python-dotenv==1.0.1  # 환경변수 관리 (예: .env 파일 사용)
+pydantic==2.6.1       # 데이터 검증 및 직렬화 (FastAPI 의존성)
+pydantic-settings==2.2.1  # 설정 관리를 위한 pydantic 확장
+sqlalchemy==2.0.25    # 데이터베이스 ORM
+asyncpg==0.29.0       # PostgreSQL 비동기 드라이버
+alembic==1.13.1       # 데이터베이스 마이그레이션 도구
+httpx==0.26.0         # 비동기 HTTP 클라이언트 (테스트 및 외부 API 호출)
+requests==2.31.0      # 동기 HTTP 클라이언트 (일반 API 호출용)
