@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TODO List</title>
+</head>
+<body>
+  <h1>TODO List</h1>
+  <ul>
+    {% for todo in todo_list %}
+    <li>
+      <strong>ID:</strong> {{ todo.id }} |
+      <strong>Title:</strong> {{ todo.title }} |
+      <strong>Description:</strong> {{ todo.description }} |
+      <strong>Done:</strong> {{ todo.done }}
+    </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Create New TODO</h2>
+  <form action="/todo" method="post">
+    <label for="id">ID:</label>
+    <input id="id" name="id" type="number" required />
+    <br /><br />
+    <label for="title">Title:</label>
+    <input id="title" name="title" type="text" required />
+    <br /><br />
+    <label for="description">Description:</label>
+    <input id="description" name="description" type="text" />
+    <br /><br />
+    <label for="done">Done:</label>
+    <input id="done" name="done" type="checkbox" />
+    <br /><br />
+    <button type="submit">Create</button>
+  </form>
+</body>
+</html>
