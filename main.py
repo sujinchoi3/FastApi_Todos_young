@@ -50,7 +50,7 @@ def update_todo(todo_id: int, updated_todo: TodoItem):
             todo.update(updated_todo.dict())
             save_todos(todos)
             return updated_todo
-    raise HTTPException(status_code=404, detail="To-Do item not found")
+    raise HTTPException(status_code=404, detail="To-Do item not found!!!_SJ")
 
 # To-Do 항목 삭제
 @app.delete("/todos/{todo_id}", response_model=dict)
